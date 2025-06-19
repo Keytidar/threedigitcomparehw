@@ -1,4 +1,4 @@
-let inputdigits = prompt('Enter a three-digit number: ').trim();
+let inputdigits = prompt('Enter a three-digit number: ')?.trim();
 inputdigits = Math.round(Number(inputdigits));
 if (isNaN(inputdigits) || inputdigits < 100 || inputdigits > 999) {
   alert('Please, enter a proper three-digit number');
@@ -14,3 +14,4 @@ if (isNaN(inputdigits) || inputdigits < 100 || inputdigits > 999) {
 
   checkArray(inputdigitsArray);
 }
+
